@@ -7,5 +7,5 @@ module GpSelection
 
     include("utils.jl")
     include("sampledata.jl")
-    include("vb.jl")
+    include("varBayes.jl")
 end

@@ -12,7 +12,7 @@ immutable PriorPars
     b::Array{Float64}
 end
 
-vb = function (dat::Dat, priors::PriorPars, options::Options)
+varBayes = function (dat::Dat, priors::PriorPars, options::Options)
 	# load the dat
 	y = dat.y
 	X = dat.X
@@ -63,7 +63,7 @@ vb = function (dat::Dat, priors::PriorPars, options::Options)
 	# Estimation for gamma
 	gamma_E = fill(0.5, K)
 
-	"vb starts now"
+	"variational Bayes starts now"
 	for iter in 1:maxIter
 	    # Report progress of mcmc iter
 	    if (mod(iter, 500) == 0)
