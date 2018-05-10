@@ -1,5 +1,11 @@
 module GpSelection
+    export fixMatrix, calcSigma, GenerateZ, GenerateData
 
-# package code goes here
+    using Distributions
+    using MatrixDepot
+    using Combinatorics
 
-end # module
+    include("utils.jl")
+    include("sampledata.jl")
+    include("vb.jl")
+end
