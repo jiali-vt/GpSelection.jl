@@ -1,5 +1,5 @@
 module GpSelection
-    export fixMatrix, calcSigma, GenerateZ, GenerateData
+    export fixMatrix, calcSigma, generateZ, generateData
 
     using Distributions
     using MatrixDepot
